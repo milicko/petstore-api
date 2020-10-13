@@ -8,9 +8,9 @@
 
 ### Steps to install:
 1. Get code on your local machine
-2. Setup SDK
-3. Build project with mvn clean install -DskipTests, if you have project with tests java you can change java version in pom.xml
+2. Setup SDK (if needed)
+3. Build project with mvn clean install -DskipTests  (if you have error while building related to java version you can change java version in pom.xml)
 4. Open project src/test/java and open "T001petFlowTest" class
-5. Right click on "T001petFlowTest" class and run all tests from the class
+5. Right click on "T001petFlowTest" class and run all tests from this class
 
 NOTE: In order for this tests to work you need to run ALL tests at once.
