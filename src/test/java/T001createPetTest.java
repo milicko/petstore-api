@@ -21,7 +21,8 @@ import java.util.List;
 import static org.hamcrest.Matchers.equalTo;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class T001createDogTest extends Base {
+public class T001createPetTest extends Base {
+
     static int id = createRandomNumber(100);
     static String categoryName = createRandomString(5);
     static String status = createRandomString(10);
@@ -120,7 +121,7 @@ public class T001createDogTest extends Base {
     public void t004_verifyPetUpdated() {
         DogCreationModel a = RestAssured.given().spec(requestSpec)
                 .when()
-                .get("https://petstore.swagger.io/v2/pet/" + id)
+                .get(RequestConstants.V2_PET_ID(id))
                 .as(DogCreationModel.class);
 
         Assert.assertEquals("ID doesn't match!", id, a.getId());
