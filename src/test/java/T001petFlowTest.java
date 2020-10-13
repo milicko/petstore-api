@@ -21,7 +21,7 @@ import java.util.List;
 import static org.hamcrest.Matchers.equalTo;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class T001createPetTest extends Base {
+public class T001petFlowTest extends Base {
 
     static int id = createRandomNumber(100);
     static String categoryName = createRandomString(5);
